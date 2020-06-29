@@ -1,0 +1,116 @@
+html,
+body,
+.ct_layout{
+    width: 100%;
+    height: 100%;
+    /*position: relative;*/
+}
+/*头部搜索*/
+.ct_header {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+    background-color: #eee;
+    position: relative;
+    float: left;
+}
+.ct_back {
+    width: 14px;
+    height:20px;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    background: url("../images/jd-sprites.png");
+    background-size: 200px 200px;
+    background-position: -22px 0px;
+
+}
+.ct_menu {
+    width: 20px;
+    height:20px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: url("../images/jd-sprites.png");
+    background-size: 200px 200px;
+    background-position: -61px 0px;
+}
+.ct_search {
+    width: 100%;
+    height: 100%;
+    padding:0 60px;
+}
+.ct_search input {
+    width: 100%;
+    height: 40px;
+    border-radius:5px;
+    margin-top:5px;
+    font-size: 16px;
+    color: #666;
+    padding-left: 8px;
+}
+/*主体内容*/
+.ct_content {
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    /*position: relative;*/
+}
+.ct_cleft {
+    width: 100px;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+}
+.ct_cleft ul {
+    width: 100%;
+}
+.ct_cleft ul li {
+    height: 50px;
+    width: 100%;
+}
+.ct_cleft ul li a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #eee;
+    color: #333;
+    line-height: 50px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.ct_cleft ul li.active a {
+    background-color: #fff;
+    border-bottom: none;
+    border-top: none;
+    color: #e92322;
+}
+.ct_cright {
+    height: 100%;
+    margin-left: 100px;
+}
+.ct_rImg {
+    width: 100%;
+    height: 20%;
+    display: block;
+}
+.ct_rImg img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.ct_cright h3  {
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.ct_hotCategory {
+    width: 100%;
+}
+.ct_hotCategory li {
+    width: 33.33%;
+    float: left;
+    text-align: center;
+}

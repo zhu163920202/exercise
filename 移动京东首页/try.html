@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width = divice-width, user-scalable=no, initial-scale=1">
+	<title>Touch</title>
+</head>
+<style>
+	div {
+		width: 100px;
+		height: 100px;
+		background-color: #ff0000;
+	}
+</style>
+<body>
+<div>
+
+</div>
+<script>
+	var div = document.querySelector("div");
+	var startX, startY,moveX, moveY, distanceX, distanceY;
+	div.addEventListener("touchstart",function(e){
+		startX = e.targetTouches[0].clientX;
+		startY = e.targetTouches[0].clientY;
+	});
+	div.addEventListener("touchmove", function(e){
+		moveX = e.targetTouches[0].clientX;
+		moveY = e.targetTouches[0].clientY;
+		distanceX = moveX - startX;
+		distanceY = moveY - startY;
+		div.style.transform = "translate("+ distanceX + "px, "+ distanceY + "px)"
+	});
+	div.addEventListener("touchend",function(){
+		console.log("touchend");
+	});
+</script>
+</body>
+</html>
